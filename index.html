@@ -3,52 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dust Be Gone Cleaning Service</title>
+<title>Dust Be Gone Cleaning Services</title>
+
+<meta name="description" content="Dust Be Gone Cleaning Services provides professional office cleaning in Savannah, GA. Over 30 years experience. Reliable, trustworthy, and affordable cleaning solutions.">
+<meta name="keywords" content="office cleaning, commercial cleaning, Savannah GA cleaning, janitorial service, Dust Be Gone Cleaning, professional cleaners">
+<meta name="author" content="Dust Be Gone Cleaning Services">
+<link rel="canonical" href="https://dbgcs.com/">
+
+<meta property="og:title" content="Dust Be Gone Cleaning Services">
+<meta property="og:description" content="Professional office cleaning in Savannah, GA for over 30 years. Request a free quote today.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dbgcs.com/">
+<meta property="og:image" content="https://dbgcs.com/images/hero.jpg">
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "Dust Be Gone Cleaning Services",
+"image": "https://dbgcs.com/images/hero.jpg",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "Savannah",
+"addressRegion": "GA",
+"addressCountry": "USA"
+},
+"telephone": "9126619449",
+"email": "spencer7778@protonmail.com",
+"url": "https://dbgcs.com",
+"priceRange": "$$",
+"serviceType": "Office Cleaning"
+}
+</script>
+
+<meta name="theme-color" content="#0a4a8f">
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 <style>
 body {font-family:'Montserrat',sans-serif;margin:0;padding:0;color:#333;line-height:1.6;scroll-behavior:smooth;}
 a{text-decoration:none;color:inherit;} img{max-width:100%;height:auto;}
-nav{position:sticky;top:0;background:rgba(10,74,143,0.95);display:flex;justify-content:center;padding:15px 0;z-index:1000;}
-nav a{margin:0 20px;color:white;font-weight:600;transition:.3s;} nav a:hover{color:#f0c14b;}
+
+nav{position:sticky;top:0;background:rgba(10,74,143,0.95);display:flex;justify-content:center;padding:15px 0;z-index:1000;position:relative;}
+nav a{margin:0 20px;color:white;font-weight:600;transition:.3s;} 
+nav a:hover{color:#f0c14b;}
+
+.menu-toggle{display:none;cursor:pointer;position:absolute;right:20px;top:15px;font-size:1.8rem;color:white;}
+
+@media(max-width:768px){
+  nav{justify-content:flex-start;padding-left:20px;}
+  nav a{display:none;}
+  nav.active a{display:block;padding:10px 0;text-align:left;}
+  .menu-toggle{display:block;}
+  nav.active{background:rgba(10,74,143,0.97);padding-bottom:15px;}
+}
+
+.call-btn{
+  position:fixed;bottom:25px;left:25px;
+  background:#28a745;color:white;
+  padding:15px 22px;border-radius:50px;
+  font-size:1.1rem;font-weight:700;
+  display:flex;align-items:center;gap:10px;
+  z-index:2000;box-shadow:0 6px 20px rgba(0,0,0,0.25);
+  transition:.3s;
+}
+.call-btn:hover{background:#1f8a39;transform:translateY(-4px);}
+.call-btn i{font-size:1.3rem;}
+
 header{position:relative;height:80vh;background:url('images/hero.jpg') no-repeat center/cover;display:flex;align-items:center;justify-content:center;color:white;text-align:center;overflow:hidden;}
 header::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);}
 header .hero-content{position:relative;z-index:1;max-width:800px;padding:20px;}
+
 h1.gradient-text{font-size:3rem;margin-bottom:15px;text-shadow:2px 2px 6px rgba(0,0,0,0.7);background:linear-gradient(90deg,#0a4a8f,#f0c14b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 header p{font-size:1.3rem;margin-bottom:25px;text-shadow:1px 1px 4px rgba(0,0,0,0.7);}
 .cta-btn{background:linear-gradient(135deg,#f0c14b,#e6b800);color:#0a4a8f;padding:15px 30px;font-weight:700;border-radius:8px;transition:.3s;font-size:1.1rem;} 
 .cta-btn:hover{background:linear-gradient(135deg,#d1a92f,#c19c00);transform:translateY(-3px);}
-section{padding:80px 20px;max-width:1100px;margin:0 auto;position:relative;}
+
+section{padding:80px 20px;max-width:1100px;margin:0 auto;}
 section h2{text-align:center;margin-bottom:50px;color:#0a4a8f;font-size:2.2rem;}
-.services,.why-choose-us,.testimonials-container{display:flex;flex-wrap:wrap;justify-content:space-around;gap:25px;}
-.service,.reason,.testimonial{flex:1 1 250px;background:#f0f8ff;padding:30px 20px;border-radius:12px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.1);transition: transform .3s,box-shadow .3s;}
-.service:hover,.reason:hover,.testimonial:hover,button:hover{transform:translateY(-7px) scale(1.02);box-shadow:0 15px 35px rgba(0,0,0,0.2);}
-.service h3,.reason h3,.testimonial h3{margin-bottom:15px;color:#0a4a8f;}
-.service p,.reason p,.testimonial p{font-size:1rem;line-height:1.5;}
-.service i{font-size:2rem;color:#0a4a8f;margin-bottom:10px;}
-form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:18px;}
-input,textarea{padding:15px;border-radius:8px;border:1px solid #ccc;font-size:1rem;width:100%;transition:.3s;}
-input:focus,textarea:focus{outline:none;border-color:#0a4a8f;box-shadow:0 0 8px rgba(10,74,143,0.3);}
-button{background-color:#0a4a8f;color:white;padding:15px;border:none;border-radius:8px;font-size:1.1rem;cursor:pointer;transition:.3s;}
-button:hover{background-color:#07407a;transform:translateY(-3px);}
-#testimonials{padding:80px 20px;background:#f8faff;max-width:900px;margin:0 auto;text-align:center;}
+
+.service,.reason,.testimonial{flex:1 1 250px;background:#f0f8ff;padding:30px 20px;border-radius:12px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.1);transition:.3s;}
+
 #testimonials .carousel{position:relative;overflow:hidden;height:160px;}
-.testimonial{position:absolute;top:0;left:100%;width:100%;opacity:0;transition:all .8s ease-in-out;}
+.testimonial{position:absolute;top:0;left:100%;width:100%;opacity:0;transition:.8s;}
 .testimonial.active{left:0;opacity:1;}
-.testimonial p{font-size:1.1rem;margin-bottom:15px;font-style:italic;}
-.testimonial h4{font-weight:600;color:#0a4a8f;}
-#scrollTopBtn{position:fixed;bottom:40px;right:40px;padding:15px 20px;background:#0a4a8f;color:white;border:none;border-radius:50%;display:none;cursor:pointer;z-index:1000;font-size:1.3rem;}
+
+form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:18px;}
+input,textarea{padding:15px;border-radius:8px;border:1px solid #ccc;font-size:1rem;transition:.3s;}
+input:focus,textarea:focus{outline:none;border-color:#0a4a8f;box-shadow:0 0 8px rgba(10,74,143,0.3);}
+
+button{background:#0a4a8f;color:white;padding:15px;border:none;border-radius:8px;font-size:1.1rem;cursor:pointer;transition:.3s;}
+button:hover{background:#07407a;transform:translateY(-3px);}
+
 footer{background:#0a4a8f;color:white;text-align:center;padding:40px 20px;}
-footer p{margin:5px 0;}
-.sparkle{position:absolute;width:5px;height:5px;background:white;border-radius:50%;opacity:0;animation:sparkle 2s infinite;}
-@keyframes sparkle{0%{opacity:0;transform:translateY(0) scale(0.5);}50%{opacity:1;transform:translateY(-20px) scale(1);}100%{opacity:0;transform:translateY(-40px) scale(0.5);}}
-@media(max-width:768px){.services,.why-choose-us,.testimonials-container{flex-direction:column;align-items:center;} header h1{font-size:2.2rem;} header p{font-size:1.1rem;}}
 </style>
 </head>
+
 <body>
 
 <nav>
+  <div class="menu-toggle"><i class="fas fa-bars"></i></div>
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#testimonials">Testimonials</a>
@@ -56,128 +112,94 @@ footer p{margin:5px 0;}
 </nav>
 
 <header>
-  <div class="hero-content" data-aos="fade-up">
-    <h1 class="gradient-text">Professional Office Cleaning You Can Trust</h1>
-    <p>Serving offices for over 30 years. References available upon request.</p>
+  <div class="hero-content">
+    <h1 class="gradient-text">Dust Be Gone Cleaning Services</h1>
+    <p>Professional office cleaning you can trust. Serving offices for over 30 years.</p>
     <a href="#contact" class="cta-btn">Request a Free Quote</a>
   </div>
-  <div class="sparkle" style="top:20%;left:30%;animation-delay:0s;"></div>
-  <div class="sparkle" style="top:50%;left:60%;animation-delay:0.5s;"></div>
-  <div class="sparkle" style="top:70%;left:40%;animation-delay:1s;"></div>
 </header>
 
-<section id="about" data-aos="fade-up">
+<section id="about">
   <h2>About Our Company</h2>
-  <p>We have been providing professional office cleaning services for over 30 years. Our team is reliable, trustworthy, and committed to keeping your workspace clean and organized. References are available upon request.</p>
+  <p>We have been providing professional office cleaning services for over 30 years. References available upon request.</p>
 </section>
 
-<section id="services" data-aos="fade-up">
+<section id="services">
   <h2>Our Cleaning Services</h2>
   <div class="services">
-    <div class="service">
-      <i class="fas fa-broom"></i>
-      <h3>General Office Cleaning</h3>
-      <p>Dusting, wiping surfaces, and keeping your office organized.</p>
-    </div>
-    <div class="service">
-      <i class="fas fa-trash"></i>
-      <h3>Trash Removal & Recycling</h3>
-      <p>Emptying bins and maintaining cleanliness throughout your office.</p>
-    </div>
-    <div class="service">
-      <i class="fas fa-toilet-paper"></i>
-      <h3>Restroom Cleaning</h3>
-      <p>Sanitizing toilets, sinks, and counters for a hygienic environment.</p>
-    </div>
-    <div class="service">
-      <i class="fas fa-kitchen-set"></i>
-      <h3>Kitchen & Breakroom Cleaning</h3>
-      <p>Wiping counters, cleaning sinks, and tidying appliances.</p>
-    </div>
-    <div class="service">
-      <i class="fas fa-swatchbook"></i>
-      <h3>Floor Maintenance</h3>
-      <p>Sweeping, mopping, and vacuuming to keep floors spotless.</p>
-    </div>
+    <div class="service"><i class="fas fa-broom"></i><h3>General Office Cleaning</h3><p>Dusting and wiping surfaces.</p></div>
+    <div class="service"><i class="fas fa-trash"></i><h3>Trash Removal</h3><p>Emptying and maintaining bins.</p></div>
+    <div class="service"><i class="fas fa-toilet-paper"></i><h3>Restroom Cleaning</h3><p>Sanitizing toilets and sinks.</p></div>
+    <div class="service"><i class="fas fa-kitchen-set"></i><h3>Breakroom Cleaning</h3><p>Countertops and appliances.</p></div>
+    <div class="service"><i class="fas fa-swatchbook"></i><h3>Floor Maintenance</h3><p>Sweeping, mopping, and vacuuming.</p></div>
   </div>
 </section>
 
-<section class="why-choose-us" data-aos="fade-up">
-  <h2>Why Choose Us?</h2>
-  <div class="why-choose-us">
-    <div class="reason">
-      <h3>30 Years Experience</h3>
-      <p>We have decades of experience providing professional cleaning services.</p>
-    </div>
-    <div class="reason">
-      <h3>Reliable & Professional</h3>
-      <p>Our team is trustworthy, punctual, and attentive to your needs.</p>
-    </div>
-    <div class="reason">
-      <h3>References Available</h3>
-      <p>We can provide references from satisfied clients upon request.</p>
-    </div>
-    <div class="reason">
-      <h3>Flexible Scheduling</h3>
-      <p>We work around your office hours to minimize disruption.</p>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" data-aos="fade-up">
+<section id="testimonials">
   <h2>What Our Clients Say</h2>
   <div class="carousel">
-    <div class="testimonial active">
-      <p>"We've been using this cleaning service for over 10 years. Their team is professional, reliable, and our office has never looked better!"</p>
-      <h4>- Sarah M., Office Manager</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Excellent service! Always on time and attentive to details. Highly recommend for any office."</p>
-      <h4>- James L., CEO</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Their staff is trustworthy and thorough. After 30 years in business, they clearly know what they're doing."</p>
-      <h4>- Lisa R., Director</h4>
-    </div>
+    <div class="testimonial active"><p>"Reliable for 10+ years."</p><h4>- Sarah M.</h4></div>
+    <div class="testimonial"><p>"Always professional."</p><h4>- James L.</h4></div>
+    <div class="testimonial"><p>"Great attention to detail."</p><h4>- Lisa R.</h4></div>
   </div>
 </section>
 
-<section id="contact" data-aos="fade-up">
+<section id="contact">
   <h2>Request a Free Quote</h2>
-  <form action="https://formspree.io/f/xpwyglkl" method="POST">
+  <form action="https://formspree.io/f/mldqoapk" method="POST">
+    <input type="text" name="_gotcha" style="display:none">
+    <input type="hidden" name="_redirect" value="https://dbgcs.com/thankyou.html">
+
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <input type="tel" name="phone" placeholder="Your Phone Number" required>
     <input type="text" name="company" placeholder="Company Name">
     <input type="text" name="address" placeholder="Office Address" required>
+
     <textarea name="message" rows="5" placeholder="Details about your cleaning needs"></textarea>
     <button type="submit">Submit & Get Your Free Quote</button>
   </form>
 </section>
 
 <footer>
-  <p>© 2025 Dust Be Gone Cleaning Service | Serving clients for over 30 years</p>
-  <p>Email: <a href="mailto:spencer7778@protonmail.com" style="color:white;">spencer7778@protonmail.com</a> | Phone: (912) 661-9449</p>
+  <p>© 2025 Dust Be Gone Cleaning Services</p>
+  <p>Email: <a href="mailto:spencer7778@protonmail.com" style="color:white;">spencer7778@protonmail.com</a> |
+     Phone: <a href="tel:9126619449" style="color:white;">912-661-9449</a></p>
 </footer>
 
-<button id="scrollTopBtn">↑</button>
+<a href="tel:9126619449" class="call-btn"><i class="fas fa-phone"></i> Call Now</a>
+
+<script>
+document.querySelectorAll('nav a').forEach(link=>{
+  link.addEventListener('click',e=>{
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+
+<script>
+const menuToggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+menuToggle.addEventListener('click',()=>nav.classList.toggle('active'));
+document.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',()=>nav.classList.remove('active')));
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({duration:800,once:true});
-  let index = 0;
-  const testimonials = document.querySelectorAll('.testimonial');
-  function showNextTestimonial(){
-    testimonials[index].classList.remove('active');
-    index=(index+1)%testimonials.length;
-    testimonials[index].classList.add('active');
-  }
-  setInterval(showNextTestimonial,5000);
-  const scrollBtn = document.getElementById("scrollTopBtn");
-  window.onscroll=function(){scrollBtn.style.display= document.body.scrollTop>300||document.documentElement.scrollTop>300?"block":"none";}
-  scrollBtn.onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+AOS.init({duration:800,once:true});
+let index=0;
+const t=document.querySelectorAll('.testimonial');
+setInterval(()=>{t[index].classList.remove('active');index=(index+1)%t.length;t[index].classList.add('active');},5000);
+</script>
+
+<script>
+const callButton=document.querySelector('.call-btn');
+callButton.addEventListener('click',function(e){
+  const isMobile=/iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if(!isMobile){e.preventDefault();alert("Please call 912-661-9449 from your phone.");}
+});
 </script>
 
 </body>
 </html>
-
