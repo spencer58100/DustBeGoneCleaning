@@ -72,81 +72,141 @@ nav a:hover{color:#f0c14b;}
 .call-btn:hover{background:#1f8a39;transform:translateY(-4px);}
 .call-btn i{font-size:1.3rem;}
 
-header{position:relative;height:80vh;background:url('images/hero.jpg') no-repeat center/cover;display:flex;align-items:center;justify-content:center;color:white;text-align:center;overflow:hidden;}
-header::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);}
-header .hero-content{position:relative;z-index:1;max-width:800px;padding:20px;}
-
-h1.gradient-text{font-size:3rem;margin-bottom:15px;text-shadow:2px 2px 6px rgba(0,0,0,0.7);background:linear-gradient(90deg,#0a4a8f,#f0c14b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-header p{font-size:1.3rem;margin-bottom:25px;text-shadow:1px 1px 4px rgba(0,0,0,0.7);}
-.cta-btn{background:linear-gradient(135deg,#f0c14b,#e6b800);color:#0a4a8f;padding:15px 30px;font-weight:700;border-radius:8px;transition:.3s;font-size:1.1rem;} 
-.cta-btn:hover{background:linear-gradient(135deg,#d1a92f,#c19c00);transform:translateY(-3px);}
-
-section{padding:80px 20px;max-width:1100px;margin:0 auto;}
-section h2{text-align:center;margin-bottom:50px;color:#0a4a8f;font-size:2.2rem;}
-
-.service,.reason,.testimonial{flex:1 1 250px;background:#f0f8ff;padding:30px 20px;border-radius:12px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.1);transition:.3s;}
-
-#testimonials .carousel{position:relative;overflow:hidden;height:160px;}
-.testimonial{position:absolute;top:0;left:100%;width:100%;opacity:0;transition:.8s;}
-.testimonial.active{left:0;opacity:1;}
-
-form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:18px;}
-input,textarea{padding:15px;border-radius:8px;border:1px solid #ccc;font-size:1rem;transition:.3s;}
-input:focus,textarea:focus{outline:none;border-color:#0a4a8f;box-shadow:0 0 8px rgba(10,74,143,0.3);}
-
-button{background:#0a4a8f;color:white;padding:15px;border:none;border-radius:8px;font-size:1.1rem;cursor:pointer;transition:.3s;}
-button:hover{background:#07407a;transform:translateY(-3px);}
-
-footer{background:#0a4a8f;color:white;text-align:center;padding:40px 20px;}
-</style>
-</head>
-
-<body>
-
-<nav>
-  <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#testimonials">Testimonials</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <header>
   <div class="hero-content">
     <h1 class="gradient-text">Dust Be Gone Cleaning Services</h1>
-    <p>Professional office cleaning you can trust. Serving offices for over 30 years.</p>
-    <a href="#contact" class="cta-btn">Request a Free Quote</a>
+    <p>
+      Reliable commercial cleaning services that help your office look professional,
+      feel sanitary, and make a lasting impression on employees and clients alike.
+      Proudly serving Savannah area businesses for over 30 years.
+    </p>
+    <a href="#contact" class="cta-btn">Request Your Free Quote Today</a>
   </div>
 </header>
 
 <section id="about">
-  <h2>About Our Company</h2>
-  <p>We have been providing professional office cleaning services for over 30 years. References available upon request.</p>
+  <h2>Professional Cleaning You Can Depend On</h2>
+
+  <p style="font-size:1.1rem;text-align:center;max-width:900px;margin:0 auto;line-height:1.9;">
+    At Dust Be Gone Cleaning Services, we understand that a clean workplace reflects
+    the professionalism of your business. For over 30 years, we have provided dependable,
+    detail-oriented commercial cleaning services for offices and professional buildings
+    throughout the Savannah area.
+    <br><br>
+    We take pride in delivering consistent, high-quality cleaning with honest service,
+    dependable scheduling, and close attention to detail. Whether you need ongoing office
+    cleaning or customized janitorial services, we work hard to create a cleaner,
+    healthier, and more welcoming environment for your staff and visitors.
+    <br><br>
+    References are available upon request.
+  </p>
 </section>
 
 <section id="services">
-  <h2>Our Cleaning Services</h2>
+  <h2>Our Professional Cleaning Services</h2>
+
   <div class="services">
-    <div class="service"><i class="fas fa-broom"></i><h3>General Office Cleaning</h3><p>Dusting and wiping surfaces.</p></div>
-    <div class="service"><i class="fas fa-trash"></i><h3>Trash Removal</h3><p>Emptying and maintaining bins.</p></div>
-    <div class="service"><i class="fas fa-toilet-paper"></i><h3>Restroom Cleaning</h3><p>Sanitizing toilets and sinks.</p></div>
-    <div class="service"><i class="fas fa-kitchen-set"></i><h3>Breakroom Cleaning</h3><p>Countertops and appliances.</p></div>
-    <div class="service"><i class="fas fa-swatchbook"></i><h3>Floor Maintenance</h3><p>Sweeping, mopping, and vacuuming.</p></div>
+
+    <div class="service">
+      <i class="fas fa-broom"></i>
+      <h3>General Office Cleaning</h3>
+      <p>
+        Complete cleaning of desks, counters, furniture, common areas, and workspaces
+        to maintain a polished and professional appearance throughout your facility.
+      </p>
+    </div>
+
+    <div class="service">
+      <i class="fas fa-trash"></i>
+      <h3>Trash Removal</h3>
+      <p>
+        Daily or scheduled trash collection and liner replacement to keep your office
+        clean, odor-free, and operating efficiently.
+      </p>
+    </div>
+
+    <div class="service">
+      <i class="fas fa-toilet-paper"></i>
+      <h3>Restroom Sanitizing</h3>
+      <p>
+        Thorough disinfecting and sanitizing of toilets, sinks, mirrors, counters,
+        and touch surfaces to help maintain a healthier workplace environment.
+      </p>
+    </div>
+
+    <div class="service">
+      <i class="fas fa-kitchen-set"></i>
+      <h3>Breakroom & Kitchen Cleaning</h3>
+      <p>
+        Cleaning and sanitizing countertops, tables, sinks, microwaves,
+        and appliances to keep employee break areas fresh and inviting.
+      </p>
+    </div>
+
+    <div class="service">
+      <i class="fas fa-swatchbook"></i>
+      <h3>Floor Care & Maintenance</h3>
+      <p>
+        Professional sweeping, mopping, vacuuming, and floor maintenance services
+        designed to keep your floors looking clean and presentable every day.
+      </p>
+    </div>
+
+    <div class="service">
+      <i class="fas fa-spray-can-sparkles"></i>
+      <h3>Touchpoint Disinfection</h3>
+      <p>
+        Focused cleaning of high-contact surfaces including door handles,
+        light switches, shared equipment, and reception areas to help reduce germs.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <section id="testimonials">
   <h2>What Our Clients Say</h2>
+
   <div class="carousel">
-    <div class="testimonial active"><p>"Reliable for 10+ years."</p><h4>- Sarah M.</h4></div>
-    <div class="testimonial"><p>"Always professional."</p><h4>- James L.</h4></div>
-    <div class="testimonial"><p>"Great attention to detail."</p><h4>- Lisa R.</h4></div>
+
+    <div class="testimonial active">
+      <p>
+        "Dust Be Gone Cleaning Services has been dependable and professional for years.
+        Our office always looks clean and presentable."
+      </p>
+      <h4>- Local Business Client</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>
+        "Very reliable service with great attention to detail.
+        You can tell they truly care about the quality of their work."
+      </p>
+      <h4>- Office Manager</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>
+        "Excellent communication, trustworthy service, and consistent results.
+        Highly recommended for commercial office cleaning."
+      </p>
+      <h4>- Savannah Area Client</h4>
+    </div>
+
   </div>
 </section>
 
 <section id="contact">
-  <h2>Request a Free Quote</h2>
+  <h2>Request a Free Cleaning Quote</h2>
+
+  <p style="text-align:center;max-width:750px;margin:0 auto 35px auto;font-size:1.05rem;">
+    Looking for dependable office cleaning services in the Savannah area?
+    Contact Dust Be Gone Cleaning Services today for a free quote customized
+    to your business needs.
+  </p>
+
   <form action="https://formspree.io/f/mldqoapk" method="POST">
+
     <input type="text" name="_gotcha" style="display:none">
     <input type="hidden" name="_redirect" value="https://dbgcs.com/thankyou.html">
 
@@ -156,9 +216,12 @@ footer{background:#0a4a8f;color:white;text-align:center;padding:40px 20px;}
     <input type="text" name="company" placeholder="Company Name">
     <input type="text" name="address" placeholder="Office Address" required>
 
-    <textarea name="message" rows="5" placeholder="Details about your cleaning needs"></textarea>
-    <button type="submit">Submit & Get Your Free Quote</button>
+    <textarea name="message" rows="5" placeholder="Tell us about your cleaning needs"></textarea>
+
+    <button type="submit">Get My Free Quote</button>
+
   </form>
+</section>
 </section>
 
 <footer>
