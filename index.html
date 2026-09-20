@@ -306,6 +306,75 @@ section h2{
   color:#0a4a8f;
 }
 
+/* BEFORE & AFTER */
+
+#results{
+  background:#f7fbff;
+}
+
+.results-card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 12px 32px rgba(0,0,0,0.12);
+  max-width:1080px;
+  margin:0 auto;
+}
+
+.results-card + .results-card{
+  margin-top:32px;
+}
+
+.before-after-image{
+  position:relative;
+}
+
+.before-after-image img{
+  display:block;
+  width:100%;
+  aspect-ratio:2/1;
+  object-fit:cover;
+}
+
+.before-label,
+.after-label{
+  position:absolute;
+  top:22px;
+  padding:9px 18px;
+  border-radius:30px;
+  color:white;
+  font-size:.9rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  box-shadow:0 4px 14px rgba(0,0,0,.25);
+}
+
+.before-label{
+  left:22px;
+  background:#6b2020;
+}
+
+.after-label{
+  right:22px;
+  background:#16813b;
+}
+
+.results-copy{
+  padding:32px 38px;
+  text-align:center;
+}
+
+.results-copy h3{
+  color:#0a4a8f;
+  font-size:1.45rem;
+  margin-bottom:10px;
+}
+
+.results-copy p{
+  max-width:780px;
+  margin:0 auto;
+}
+
 /* TESTIMONIALS */
 
 .testimonial-grid{
@@ -455,6 +524,20 @@ footer p{
     padding:30px 22px;
   }
 
+  .results-copy{
+    padding:26px 22px;
+  }
+
+  .before-label,
+  .after-label{
+    top:12px;
+    padding:6px 11px;
+    font-size:.68rem;
+  }
+
+  .before-label{ left:12px; }
+  .after-label{ right:12px; }
+
 }
 
 </style>
@@ -471,6 +554,7 @@ footer p{
   <a href="#about">About</a>
   <a href="#why-us">Why Choose Us</a>
   <a href="#services">Services</a>
+  <a href="#results">Our Results</a>
   <a href="#testimonials">Testimonials</a>
   <a href="#contact">Contact</a>
 
@@ -676,6 +760,54 @@ footer p{
         <p>
           Focused disinfecting of high-contact surfaces including
           handles, switches, and shared office equipment.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="results">
+
+  <div class="container">
+
+    <h2>See the Difference a Detailed Clean Makes</h2>
+
+    <p class="section-subtitle">
+      From neglected workspaces to a clean, polished office your employees and visitors can feel good about.
+    </p>
+
+    <div class="results-card">
+
+      <div class="before-after-image">
+        <img src="images/before-after-office-cleaning.png" alt="Before and after detailed commercial office cleaning">
+        <span class="before-label">BEFORE</span>
+        <span class="after-label">AFTER</span>
+      </div>
+
+      <div class="results-copy">
+        <h3>We Notice the Details Others Miss</h3>
+        <p>
+          Dusty desks, neglected corners, fingerprints, floors, restrooms, and breakrooms - we work carefully to bring your workplace back to a professional standard.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="results-card">
+
+      <div class="before-after-image">
+        <img src="images/before-after-restroom-detail.png" alt="Before and after commercial restroom sink and toilet detailing">
+        <span class="before-label">BEFORE</span>
+        <span class="after-label">AFTER</span>
+      </div>
+
+      <div class="results-copy">
+        <h3>Restroom Details Matter</h3>
+        <p>
+          A clean restroom tells employees, customers, and visitors that you care about their comfort. We detail toilets, sinks, mirrors, floors, and the small areas that are easy to overlook.
         </p>
       </div>
 
